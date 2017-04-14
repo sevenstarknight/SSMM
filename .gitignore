@@ -1,1 +1,5 @@
 matlab_UCR.mat
+data/UCR/StarLightCurves/StarLightCurves_TRAIN
+data/UCR/StarLightCurves/StarLightCurves_TEST
+data/dataOut.csv
+data/dataSPCA.csv
