@@ -3,3 +3,6 @@ data/UCR/StarLightCurves/StarLightCurves_TRAIN
 data/UCR/StarLightCurves/StarLightCurves_TEST
 data/dataOut.csv
 data/dataSPCA.csv
+data/trainingsets/datFileFromLINEAR/12857706.dat
+data/trainingsets/2013_02_04_SXPh.dat
+data/trainingsets/

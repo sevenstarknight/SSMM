@@ -2,7 +2,7 @@ clc
 clear
 
 location = pwd;
-stringDirectory = strcat(location, '\SSMM\matlab\data\trainingsets');
+stringDirectory = strcat(location, '\SSMM\data\trainingsets');
 
 %% ====================================================
 % Make feature space and load data
