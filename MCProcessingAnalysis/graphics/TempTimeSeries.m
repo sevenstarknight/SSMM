@@ -1,5 +1,3 @@
-
-
 x = linspace(0, 1, length(structMCReduct(1).timeSeries(:,2)));
 
 figure()
