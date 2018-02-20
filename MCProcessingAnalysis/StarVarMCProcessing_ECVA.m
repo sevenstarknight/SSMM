@@ -19,7 +19,7 @@ clc
 clear
 
 location = pwd;
-stringDirectory = strcat(location, '\SSMM\data\trainingsets');
+stringDirectory = strcat(location, '/LinearData');
 
 %% ====================================================
 % Make feature space and load data

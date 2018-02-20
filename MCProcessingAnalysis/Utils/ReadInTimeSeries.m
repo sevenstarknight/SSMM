@@ -26,7 +26,7 @@ for i = 1:1:length(fileIDLinear)
 end
 
 
-cd(strcat(stringDirectory,'\datFileFromLINEAR'));
+cd(strcat(stringDirectory,'/datFileFromLINEAR'));
 
 listing = dir;
 grpSource = {};
@@ -70,6 +70,6 @@ for i = 1:1:length(listing)
     
      count = count + 1;
 end
-
+    
 
 end
