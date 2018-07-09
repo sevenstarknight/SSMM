@@ -17,7 +17,7 @@
 function [structMCReduct, grpSource] = ReadInTestTimeSeries(stringDirectory)
 
 
-cd(strcat(stringDirectory,'\StarLightCurves'))
+cd(strcat(stringDirectory,'/StarLightCurves'))
 
 %% Location of file
 TRAIN = load('StarLightCurves_TRAIN'); % Only these two lines need to be changed to test a different dataset. %

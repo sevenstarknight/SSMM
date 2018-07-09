@@ -20,8 +20,10 @@ clear
 location = pwd;
 stringDirectory = strcat(location, '\SSMM\matlab\data\dataset2');
 
+stringDirectory = '/Users/kjohnston/Google Drive/VarStarData/UCR';
+
 %% ====================================================
-% Make feature space and load data
+% % Make feature space and load data
 [structMCReduct, grpSource] = ReadInTestTimeSeries(stringDirectory);
 
 %% ====================================================
@@ -30,14 +32,14 @@ stringDirectory = strcat(location, '\SSMM\matlab\data\dataset2');
 
 %% ====================================================
 % Cycle over resolutions, determine optimal resolution
-[errorArray, resArray] = SpaamAnalysis_Metric(structMCReduct, grpSource, structPatternArray_TrainingCV);
+% [errorArray, resArray] = SpaamAnalysis_Metric(structMCReduct, grpSource, structPatternArray_TrainingCV);
 
 %% ======================================================================
 % Generate Feature Space JUST on Variablity
 states = -2:0.18:2;
 spaceTotal = zeros(length(structMCReduct) ,length(states)*length(states) + 2);
 for i = 1:1:length(structMCReduct)
-    [markovChain, meanAmplitude, stdAmplitude] = ConstructMCAmp_Kernel(...
+    [markovChain, stateTransitionMatrix, meanAmplitude, stdAmplitude] = ConstructMCAmp_Kernel(...
         structMCReduct(i).timeSeries,states);
         
     structMCReduct(i).MC = markovChain;
