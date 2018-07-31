@@ -61,7 +61,7 @@ while(i < length(kernelCenterArray))
     inKernelX = x(idx);
     inKernelT = t(idx);
     
-    if(isempty(inKernelX));
+    if(isempty(inKernelX))
         if(isempty(gaussianMeanSet))
             currentPt = find(t > kernelCenterArray(i) + windowWidth, 1);
             

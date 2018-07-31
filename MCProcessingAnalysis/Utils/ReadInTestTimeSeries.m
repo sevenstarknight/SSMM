@@ -27,8 +27,8 @@ TEST  = load('StarLightCurves_TEST' ); % Only these two lines need to be changed
 TRAIN_class_labels = TRAIN(:,1);     % Pull out the class labels.
 TEST_class_labels = TEST(:,1);       % Pull out the class labels.
 
-intSource = vertcat(TRAIN(:,1), TEST(:,1));
-fltDataSet = vertcat(TRAIN(:, 2:end), TEST(:, 2:end));
+intSource = vertcat(TRAIN(:,1)); %%, TEST(:,1));
+fltDataSet = vertcat(TRAIN(:, 2:end)); %%, TEST(:, 2:end));
 
 structMCReduct = [];
 grpSource = {};

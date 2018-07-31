@@ -47,6 +47,11 @@ for i = 1:1:length(structMCReduct)
     spaceTotal(i,:) = [structMCReduct(i).unpackMC',meanAmplitude, stdAmplitude];
 end
 
+
+ECVAm = ecva('model', spaceTotal, grpSource, 20, 'none', 'syst123', 5);
+fltPatternArrayMC = ECVAm.CanonicalVariates;
+
+
 idxTrainCross = horzcat(structPatternArray_TrainingCV(1).indexSet, structPatternArray_TrainingCV(2).indexSet,...
     structPatternArray_TrainingCV(3).indexSet, structPatternArray_TrainingCV(4).indexSet, ...
     structPatternArray_TrainingCV(5).indexSet);
