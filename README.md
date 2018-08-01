@@ -1,6 +1,9 @@
 # SSMM
 Variable Star Signature Classification using Slotted Symbolic Markov Modeling
 
+SSMM (Slotted Symbolic Markov Modeling) reduces time-domain stellar variable observations to classify stellar variables. The method can be applied to both folded and unfolded data, and does not require time-warping for waveform alignment. Written in Matlab, the performance of the supervised classification code is quantifiable and consistent, and the rate at which new data is processed is dependent only on the computational processing power available.
+
+ascl:1807.032
 
 See reference
 Johnston, K. B., & Peter, A. M. (2017). Variable Star Signature Classification using 
