@@ -19,7 +19,8 @@ clc
 clear
 
 location = pwd;
-stringDirectory = strcat(location, '/LinearData');
+folderPathKnown = strcat('/Users/kjohnston/Google Drive/VarStarData/LinearData');
+stringDirectory = strcat(folderPathKnown, '/LinearData.mat');
 
 %% ====================================================
 % Make feature space and load data
